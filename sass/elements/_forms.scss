@@ -1,0 +1,107 @@
+/*---------------------------------------------------------
+ * Forms
+---------------------------------------------------------*/
+.change_request {
+  margin-top: 2em;
+}
+.gform_body,
+.gform_footer {
+  width: 580px;
+}
+.gform_wrapper .top_label .readonly,
+.gform_wrapper .top_label .readonly .gfield_label,
+.gform_wrapper .top_label .readonly .ginput_container {
+  float: left;
+}
+.gform_wrapper .top_label .readonly .ginput_container {
+  position: relative;
+  top: -14px;
+}
+.gform_wrapper .top_label .readonly {
+  clear: none;
+  margin-right: 16px;
+  margin-bottom: 2em;
+}
+.gform_wrapper .top_label .readonly .ginput_container input {
+  border: none;
+  width: 300px;
+  max-width: 100%;
+}
+.approval_checkbox {
+  margin-top: 4em;
+  .gfield_label {
+    display: none !important;
+  }
+}
+.gform_title {
+  font-family:'AvenirNextLTW01-Medium';
+  margin-bottom: 3em  !important;
+}
+.float-left {
+  width: 265px !important;
+  float: left  !important;
+  margin-right: 1em !important;
+  clear: none !important;
+}
+.gfield {
+  margin-bottom: 1em;
+  label {
+    font-family:'Avenir Next W01 Light';
+    @include font-size(14);
+    padding-bottom: 0.25em;
+    margin-bottom: 1em;
+    display: block;
+  }
+}
+.gform_wrapper input[type=text], 
+.gform_wrapper input[type=url], 
+.gform_wrapper input[type=email], 
+.gform_wrapper input[type=tel], 
+.gform_wrapper input[type=number], 
+.gform_wrapper input[type=password],
+textarea {
+  width: 100% !important;
+  border: 1px solid darken( rgb( 237, 237, 237 ), 5% );
+  padding: 0.5em !important;
+}
+textarea {
+  max-width: 546px;
+}
+.gform_wrapper .gform_footer input.button, 
+.gform_wrapper .gform_footer input[type=submit] {
+  border: none;
+  outline: none;
+  padding: 1em;
+  width: 355px;
+  font-family:'Avenir Next W01 Light';
+  text-transform: uppercase;
+  @include font-size(14);
+  float: right;
+  background-color: rgb( 255, 201, 0 );
+  color: $color__font;
+  font-weight: bold;
+  transition: background-color 0.5s ease-in-out;
+  &:hover {
+    background-color: darken( rgb( 255, 201, 0 ), 5% );
+    transition: background-color 0.5s ease-in-out;
+  }
+}
+.gform_wrapper .gform_footer {
+    padding: 3em 0 .625em !important;
+}
+.gform_wrapper.gf_browser_chrome .gfield_checkbox li input[type=checkbox], 
+.gform_wrapper.gf_browser_chrome .gfield_radio li input[type=radio] {
+    margin-top: 0 !important;
+}
+.mce-edit-area,
+.mce-toolbar-grp,
+.mce-statusbar {
+  border-left: 1px solid #e0e0e0 !important;
+  border-right: 1px solid #e0e0e0 !important;
+}
+.mce-toolbar-grp {
+  border-top: 1px solid #e0e0e0 !important;
+}
+.mce-statusbar {
+  border-bottom: 1px solid #e0e0e0 !important;
+}

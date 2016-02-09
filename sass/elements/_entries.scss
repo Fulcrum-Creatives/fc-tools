@@ -1,0 +1,130 @@
+/*---------------------------------------------------------
+ * Entries
+---------------------------------------------------------*/
+.page__header {
+  text-align: center;
+  @include font-size(30);
+  font-family:'Avenir Next LT W01 Bold';
+  margin-top: 0;
+}
+.main--aside,
+.main--body {
+}
+.main--aside {
+  background-color: rgba( 246, 246, 246, 1 );
+}
+.projects {
+  padding: 3em 1em 0;
+  .projects__heading {
+    @include font-size(18);
+    text-align: center;
+    padding: 0.5em;
+    padding: 2em 1em;
+    margin: 0;
+    font-family:'AvenirNextLTW01-Medium';
+    a {
+      text-decoration: none;
+      color: $color__font;
+    }
+  }
+  ul {
+    list-style-type: none;
+    margin: 0 0 1em;
+    padding: 0;
+    a {
+      font-family:'Avenir Next W01 Light';
+      text-align: center;
+      position: relative;
+      width: 100%;
+      margin: 0 auto;
+      display: block;
+      white-space: nowrap;
+      text-decoration: none;
+      padding: 1em;
+      color: $color__font;
+      @include font-size(14);
+      font-weight: bold;
+      background-color: transparent;
+      border: 1px solid rgb( 246, 246, 246 );
+      transition: background-color 0.5s ease-in-out, border-color 0.5s ease-in-out;
+      &:hover {
+        transition: background-color 0.5s ease-in-out, border-color 0.5s ease-in-out;
+        border-color: darken( rgb( 237, 237, 237 ), 5% );
+        background-color: #fff;
+      }
+    }
+  }
+}
+.files {
+  overflow: hidden;
+}
+.files__container {
+  width: 23%;
+  float: left;
+  margin: 1%;
+  .files__item {
+    height: 350px;
+    overflow: hidden;
+    border: 1px solid rgb( 246, 246, 246 );
+  }
+  .files__title {
+    padding: 0.25em;
+    text-align: center;
+    @include font-size(14);
+    font-family:'Avenir Next W01 Light';
+  }
+}
+.approval {
+  margin-bottom: 10em;
+  .approval__title,
+  .approval__link {
+    float: left;
+  }
+  .approval__title {
+    font-family:'AvenirNextLTW01-Medium';
+    @include font-size(21);
+    padding: 12px 1em;
+    margin-right: 3em;
+    h3 {
+      margin: 0;
+    }
+  }
+  .approval__link {
+    position: relative;
+    padding: 1em;
+    width: 355px;
+    font-family:'Avenir Next W01 Light';
+    text-transform: uppercase;
+    @include font-size(16);
+    background-color: rgb( 255, 201, 0 );
+    color: $color__font;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.5s ease-in-out;
+    &:after {
+      content: 'Click to Proceed';
+      position: absolute;
+      left: 112px;
+      bottom: -30px;
+      text-transform: none;
+    }
+    &:hover {
+      background-color: darken( rgb( 255, 201, 0 ), 5% );
+      transition: background-color 0.5s ease-in-out;
+    }
+  }
+}
+.change_request {
+  clear: both;
+  margin-top: 3em;
+}
+
+div.pdfemb-viewer { 
+  border: 1px solid #ddd !important;
+  width: 100% !important;
+  margin-bottom: 3em !important;
+}
+div.pdfemb-inner-div {
+    background-color: transparent !important;
+}

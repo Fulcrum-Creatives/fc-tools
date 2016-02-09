@@ -1,0 +1,24 @@
+// Colors
+//================================================================================
+// text colors
+$color__font: rgb( 34, 31, 31 );
+$color__header: #333;
+
+// color pallete
+
+// Typography
+//================================================================================
+$font-size__base: 16;
+// The default font family.
+$font-family__base: sans-serif !default;
+// Header sizes
+$h1-font-size: 2    * $font-size__base !default;
+$h2-font-size: 1.5  * $font-size__base !default;
+$h3-font-size: 1.17 * $font-size__base !default;
+$h4-font-size: 1    * $font-size__base !default;
+$h5-font-size: 0.83 * $font-size__base !default;
+$h6-font-size: 0.67 * $font-size__base !default;
+
+// Layout
+//================================================================================
+$gutter: 1em;
