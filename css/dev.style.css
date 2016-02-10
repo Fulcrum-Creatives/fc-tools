@@ -4,7 +4,7 @@ Theme URI: https://github.com/Fulcrum-Creatives/fc-tools
 Author: Fulcrum Creatives
 Author URI: http://fulcrumcreatives.com/
 Description: Custom WordPress Framework
-Version: 1.0.0
+Version: 1.0.1
 Tags: 
 Text Domain: fcwp
 License: GNU General Public License v2 or later
@@ -685,19 +685,8 @@ textarea {
   margin-top: 0 !important;
 }
 
-.mce-edit-area,
-.mce-toolbar-grp,
-.mce-statusbar {
-  border-left: 1px solid #e0e0e0 !important;
-  border-right: 1px solid #e0e0e0 !important;
-}
-
-.mce-toolbar-grp {
-  border-top: 1px solid #e0e0e0 !important;
-}
-
-.mce-statusbar {
-  border-bottom: 1px solid #e0e0e0 !important;
+.wp-editor-area {
+  border: 1px solid #e0e0e0 !important;
 }
 
 /*! fancyBox v2.1.5 fancyapps.com | fancyapps.com/fancybox/#license */
