@@ -10,7 +10,7 @@
     ) );
     if( have_posts() ) : 
       while( $menu_query->have_posts() ) : 
-        $menu_query->the_post('F S, Y');
+        $menu_query->the_post();
           $published = get_the_date();
           $page_id = $post->ID;
           ?>
