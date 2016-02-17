@@ -20,7 +20,8 @@
           <?php
             $args = array(
               'child_of'     => $page_id,
-              'title_li'     => '', 
+              'title_li'     => '',
+              'sort_column'  => 'menu_order',
             );
           ?><ul><?php
             wp_list_pages( $args );
