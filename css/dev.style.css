@@ -4,7 +4,7 @@ Theme URI: https://github.com/Fulcrum-Creatives/fc-tools
 Author: Fulcrum Creatives
 Author URI: http://fulcrumcreatives.com/
 Description: Custom WordPress Framework
-Version: 1.0.4
+Version: 1.1.0
 Tags: 
 Text Domain: fcwp
 License: GNU General Public License v2 or later
@@ -448,8 +448,9 @@ h6 {
   font-size: 1.125em;
   text-align: center;
   padding: 0.5em;
-  padding: 2em 1em;
+  padding: 1em 1em;
   margin: 0;
+  position: relative;
   font-family: 'AvenirNextLTW01-Medium';
 }
 .projects .projects__heading a {
@@ -509,57 +510,6 @@ h6 {
   font-family: 'Avenir Next W01 Light';
 }
 
-.approval {
-  margin-bottom: 10em;
-}
-.approval .approval__title,
-.approval .approval__link {
-  float: left;
-}
-.approval .approval__title {
-  font-family: 'AvenirNextLTW01-Medium';
-  font-size: 21px;
-  font-size: 1.3125em;
-  padding: 12px 1em;
-  margin-right: 3em;
-}
-.approval .approval__title h3 {
-  margin: 0;
-}
-.approval .approval__link {
-  position: relative;
-  padding: 1em;
-  width: 355px;
-  font-family: 'Avenir Next W01 Light';
-  text-transform: uppercase;
-  font-size: 16px;
-  font-size: 1em;
-  background-color: #ffc900;
-  color: #221f1f;
-  font-weight: bold;
-  text-align: center;
-  text-decoration: none;
-  -webkit-transition: background-color 0.5s ease-in-out;
-  transition: background-color 0.5s ease-in-out;
-}
-.approval .approval__link:after {
-  content: 'Click to Proceed';
-  position: absolute;
-  left: 112px;
-  bottom: -30px;
-  text-transform: none;
-}
-.approval .approval__link:hover {
-  background-color: #e6b500;
-  -webkit-transition: background-color 0.5s ease-in-out;
-  transition: background-color 0.5s ease-in-out;
-}
-
-.change_request {
-  clear: both;
-  margin-top: 3em;
-}
-
 div.pdfemb-viewer {
   border: 1px solid #ddd !important;
   width: 100% !important;
@@ -568,6 +518,29 @@ div.pdfemb-viewer {
 
 div.pdfemb-inner-div {
   background-color: transparent !important;
+}
+
+.accordian {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  top: 20px;
+  right: -6px;
+  background-size: 18px 18px;
+}
+.accordian.closed {
+  background-image: url(images/arrows.png);
+}
+.accordian.opened {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+.accordian:hover {
+  cursor: pointer;
+}
+
+.menu-item ul {
+  display: none;
 }
 
 /*---------------------------------------------------------

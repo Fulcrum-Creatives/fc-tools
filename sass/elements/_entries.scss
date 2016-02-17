@@ -19,8 +19,9 @@
     @include font-size(18);
     text-align: center;
     padding: 0.5em;
-    padding: 2em 1em;
+    padding: 1em 1em;
     margin: 0;
+    position: relative;
     font-family:'AvenirNextLTW01-Medium';
     a {
       text-decoration: none;
@@ -74,52 +75,6 @@
     font-family:'Avenir Next W01 Light';
   }
 }
-.approval {
-  margin-bottom: 10em;
-  .approval__title,
-  .approval__link {
-    float: left;
-  }
-  .approval__title {
-    font-family:'AvenirNextLTW01-Medium';
-    @include font-size(21);
-    padding: 12px 1em;
-    margin-right: 3em;
-    h3 {
-      margin: 0;
-    }
-  }
-  .approval__link {
-    position: relative;
-    padding: 1em;
-    width: 355px;
-    font-family:'Avenir Next W01 Light';
-    text-transform: uppercase;
-    @include font-size(16);
-    background-color: rgb( 255, 201, 0 );
-    color: $color__font;
-    font-weight: bold;
-    text-align: center;
-    text-decoration: none;
-    transition: background-color 0.5s ease-in-out;
-    &:after {
-      content: 'Click to Proceed';
-      position: absolute;
-      left: 112px;
-      bottom: -30px;
-      text-transform: none;
-    }
-    &:hover {
-      background-color: darken( rgb( 255, 201, 0 ), 5% );
-      transition: background-color 0.5s ease-in-out;
-    }
-  }
-}
-.change_request {
-  clear: both;
-  margin-top: 3em;
-}
-
 div.pdfemb-viewer { 
   border: 1px solid #ddd !important;
   width: 100% !important;
@@ -127,4 +82,26 @@ div.pdfemb-viewer {
 }
 div.pdfemb-inner-div {
     background-color: transparent !important;
+}
+.accordian {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  top: 20px;
+  right: -6px;
+  background-size: 18px 18px;
+  &.closed {
+    background-image: url( images/arrows.png );
+  }
+  &.opened {
+    transform: rotate(180deg);
+  }
+  &:hover {
+    cursor: pointer;
+  }
+}
+.menu-item {
+  ul {
+    display: none;
+  }
 }

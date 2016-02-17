@@ -48,7 +48,8 @@ module.exports = function(grunt) {
           'js/lib/no-conflict.js',
           'js/lib/skip-navigation.js',
           'js/lib/svg-support.js',
-          'js/lib/lightbox.js'
+          'js/lib/lightbox.js',
+          'js/lib/accordian.js'
         ],
         dest: 'js/scripts.js'
       },

@@ -14,6 +14,7 @@
           $published = get_the_date();
           $page_id = $post->ID;
           ?>
+          <div class="menu-item">
             <h3 class="projects__heading">
               <a href="<?php echo the_permalink(); ?>"><?php the_title(); ?></a>
             </h3>
@@ -25,7 +26,7 @@
             );
           ?><ul><?php
             wp_list_pages( $args );
-          ?></ul><?php
+          ?></ul></div><?php
       endwhile; 
     endif; 
     wp_reset_postdata();
